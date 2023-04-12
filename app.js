@@ -1,6 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+
+/*
+ * Header
+ *  - Logo
+ *  - Nav Bar
+ * Body
+ *  -Search
+ *  - RestaurantContainer
+ *  - RestaurantCard
+ *    - Img
+ *    - Name of Res, Star Rating, Cuisine, Delivery Time
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact	
+ */
+
 const Header = () => {
   return (
     <div className="header">
@@ -23,10 +41,30 @@ const Header = () => {
   );
 };
 
+const RestraurantCard = () => {
+	return (
+		<div className="res-card">
+			<h3>Faasos</h3>
+		</div>
+	);
+}
+
+const Body = () => {
+	return (
+		<div className = "body">
+			<div className="Search">Search</div>
+			<div className="res-container">
+				<RestraurantCard />
+			</div>
+		</div>
+	);
+};
+
 const AppLayout = () => {
   return (
   <div className="app">
     <Header />
+    <Body />
   </div>
   )
 };
