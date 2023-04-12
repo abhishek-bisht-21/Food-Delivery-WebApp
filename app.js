@@ -52,7 +52,7 @@ const RestraurantCard = () => {
 const Body = () => {
 	return (
 		<div className = "body">
-			<div className="Search">Search</div>
+			<div className="search">Search</div>
 			<div className="res-container">
 				<RestraurantCard />
 			</div>
