@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// Inline Style in JSX is passed over as Javascript Object. 
 
 /*
  * Header
