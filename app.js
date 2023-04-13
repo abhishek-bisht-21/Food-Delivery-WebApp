@@ -42,14 +42,14 @@ const Header = () => {
 	);
 };
 
-const RestraurantCard = () => {
+const RestraurantCard = (props) => {
 	return (
 		<div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
 			<img className="res-logo" alt="res-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdCggSUwCg0vfyJDtYM_FpfKJjP06rpL21xhSuHUEAsQ&s" />
-			<h3>Faasos</h3>
-			<h4>Rolls and Wraps </h4>
-			<h4>4.3 ⭐</h4>
-			<h4>ETA: 38min ⌚</h4>
+			<h3>{props.resName}</h3>
+			<h4>{props.cuisine}</h4>
+			<h4>{props.rating} ⭐</h4>
+			<h4>{props.eta} ⌚</h4>
 		</div>
 	);
 }
@@ -59,15 +59,8 @@ const Body = () => {
 		<div className="body">
 			<div className="search">Search</div>
 			<div className="res-container">
-				<RestraurantCard />
-				<RestraurantCard />
-				<RestraurantCard />
-				<RestraurantCard />
-				<RestraurantCard />
-				<RestraurantCard />
-				<RestraurantCard />
-				<RestraurantCard />
-
+				<RestraurantCard resName="Faasos" cuisine="Rolls and Wraps" rating="4.3" eta="38min"/>
+				<RestraurantCard resName="KFC" cuisine="Continental" rating="4.4" eta="29min" />
 			</div>
 		</div>
 	);
