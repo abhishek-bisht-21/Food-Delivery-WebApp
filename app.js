@@ -43,14 +43,17 @@ const Header = () => {
 };
 
 const RestraurantCard = (props) => {
+
+	const { resData }  = props
+	
 	return (
 		<div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
 			<img className="res-logo" alt="res-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdCggSUwCg0vfyJDtYM_FpfKJjP06rpL21xhSuHUEAsQ&s" />
-			<h3>{props.name}</h3>
-			<h4>{props.cuisines}</h4>
-			<h4>{props.avgRating} ⭐</h4>
-			<h4>{props.deliveryTime} ⌚</h4>
-			<h4>{props.costForTwo/100} </h4>
+			<h3>{resData.data.name}</h3>
+			<h4>{resData.data.cuisines}</h4>
+			<h4>{resData.data.avgRating} ⭐</h4>
+			<h4>{resData.data.deliveryTime} minutes ⌚</h4>
+			<h4>{resData.data.costForTwo/100} </h4>
 
 		</div>
 	);
