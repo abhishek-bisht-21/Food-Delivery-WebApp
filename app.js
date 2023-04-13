@@ -47,6 +47,9 @@ const RestraurantCard = () => {
 		<div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
 			<img className="res-logo" alt="res-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdCggSUwCg0vfyJDtYM_FpfKJjP06rpL21xhSuHUEAsQ&s" />
 			<h3>Faasos</h3>
+			<h4>Rolls and Wraps </h4>
+			<h4>4.3 ⭐</h4>
+			<h4>ETA: 38min ⌚</h4>
 		</div>
 	);
 }
