@@ -60,6 +60,14 @@ const Body = () => {
 			<div className="search">Search</div>
 			<div className="res-container">
 				<RestraurantCard />
+				<RestraurantCard />
+				<RestraurantCard />
+				<RestraurantCard />
+				<RestraurantCard />
+				<RestraurantCard />
+				<RestraurantCard />
+				<RestraurantCard />
+
 			</div>
 		</div>
 	);
