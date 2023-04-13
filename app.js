@@ -50,6 +50,8 @@ const RestraurantCard = (props) => {
 			<h4>{props.cuisines}</h4>
 			<h4>{props.avgRating} ⭐</h4>
 			<h4>{props.deliveryTime} ⌚</h4>
+			<h4>{props.costForTwo/100} </h4>
+
 		</div>
 	);
 }
