@@ -62,11 +62,15 @@ const RestraurantCard = (props) => {
           cloudinaryImageId
         }
       />
-      <h3>{resData.data.name}</h3>
-      <h4>{resData.data.cuisines}</h4>
-      <h4>{resData.data.avgRating} ⭐</h4>
-      <h4>{resData.data.deliveryTime} minutes ⌚</h4>
-      <h4>{resData.data.costForTwo / 100} </h4>
+      <h2>{resData.data.name}</h2>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{area} </h4>
+      <h4>{resData.data.deliveryTime} minutes </h4>
+        <span>
+      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4>{lastMileTravelString}</h4>
+        <h4>{costForTwoString}</h4>
+      </span>
 
     </div>
   );
