@@ -1902,7 +1902,7 @@ const Body = () => {
       })}
     </div>
   );
-};
+};     
 
 // Footer component for footer section
 const Footer = () => {
